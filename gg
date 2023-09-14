@@ -1,0 +1,450 @@
+header { display: flex; align-items: center; font-size: 35px; background:
+linear-gradient(to right, rgb(255, 255, 255), rgb(255, 165, 0)); padding: 5px
+5px 2px; color: black; } header p { background-image: linear-gradient( to
+bottom, transparent 0%, transparent 90%, orange 90%, orange 100% );
+background-repeat: no-repeat; background-size: 0% 100%; background-position-x:
+right; transition: background-size 300ms; } header p:hover { background-size:
+100% 100%; background-position-x: left; } header img { height: 80px;
+margin-right: 15px; }
+
+<div class="container">
+  <section class="one">
+    <h1>
+      <header>
+        <img class="logo" src="./photos/profile.jpg" />
+        <p>A & M FROZEN MEAT TRADING</p>
+      </header>
+    </h1>
+  </section>
+
+  <section class="two">
+    <h1>
+      <div class="caption">
+        <p>LET ME MEAT YOUR NEEDS</p>
+      </div>
+
+      <div class="products">
+        <div class="prod1">
+          <img class="prod1" src="photos/prod1.jpg" />
+        </div>
+        <div class="prod2">
+          <img class="prod2" src="photos/prod2.jpg" />
+        </div>
+      </div>
+    </h1>
+  </section>
+
+  <section class="three">
+    <h1>
+      <div class="info">
+        <img class="info" src="./photos/coverphoto.jpg" />
+      </div>
+    </h1>
+  </section>
+</div>
+
+<div class="container">
+  <div class="header">
+    <div class="left">
+      <img class="profile" src="photos/profile.jpg" />
+      <p>A & M FROZEN MEAT TRADING</p>
+    </div>
+    <div class="center">information/idk what to put here yet</div>
+    <div class="right">
+      <!--home, products, and contact info-->
+    </div>
+  </div>
+
+  <section class="one">
+    <h1 id="home">pg1 home (we can put the paralax effect here)</h1>
+  </section>
+
+  <section class="two">
+    <h1 id="products">
+      pg 2 products (we will gonna put the product lists here)
+    </h1>
+  </section>
+
+  <section class="three">
+    <h1 id="contact-info">
+      pg3 contact info (we can put their fb's cover photo here and the link into
+      their social media accs)
+    </h1>
+  </section>
+</div>
+
+.container { scroll-snap-type: y mandatory; overflow-y: scroll; height: 100vh; }
+.header { background-color: rgb(255, 255, 255); display: flex; flex-direction:
+row; justify-content: space-between; align-items: center; position: fixed; left:
+0; right: 0; top: 0; height: 57px; z-index: 100; } .right { display: flex;
+flex-direction: row-reverse; } ul { position: fixed; width: 100%; height: 100vh;
+left: 0; top: 80px; text-align: center; } nav ul { float: right; margin-right:
+20px; } nav ul li { line-height: 80px; margin: 0 5px; display: inline-block; }
+nav ul li a { font-size: 17px; text-transform: uppercase; } .checkbtn {
+font-size: 30px; line-height: 80px; float: right; margin-right: 40px; cursor:
+pointer; } #check { display: none; } .profile { height: 75px; mix-blend-mode:
+darken; padding: 10px 0px 12px; margin-right: 10px; border-radius: 50%; } .left
+{ display: flex; align-items: center; font-size: 21px; padding: 17px 10px 15px;
+} .left p { background-image: linear-gradient( to bottom, transparent 0%,
+transparent 90%, orange 90% ); background-repeat: no-repeat; background-size: 0%
+100%; background-position-x: right; transition: background-size 0.3s; } .left
+p:hover { background-size: 100% 100%; background-position-x: left; } section {
+display: flex; justify-content: center; align-items: center; height: 100vh;
+scroll-snap-align: start; } .one { background-color: aquamarine; } .two {
+background-color: yellow; } .three { background-color: pink; }
+
+<input type="checkbox" id="check" />
+<label for="check" class="checkbtn"> <i class="fa fa-bars"></i> </label>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A And Frozen Meat Trading</title>
+
+    <link rel="Shortcut Icon" type="image/png" href="./photos/profile.jpg" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="profile1">
+            <img class="profile" src="photos/profile.jpg" />
+          </div>
+          <div class="text">A & M FROZEN MEAT TRADING</div>
+
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+          </label>
+
+          <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact-info">Contact-Info</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="one">
+        <h1 id="home">pg1 home (we can put the paralax effect here)</h1>
+      </section>
+
+      <section class="two">
+        <h1 id="products">
+          pg 2 products (we will gonna put the product lists here)
+        </h1>
+      </section>
+
+      <section class="three">
+        <h1 id="contact-info">
+          pg3 contact info (we can put their fb's cover photo here and the link
+          into their social media accs)
+        </h1>
+      </section>
+    </div>
+  </body>
+</html>
+
+* { margin: 0px; padding: 0px; text-decoration: none; list-style: none;
+box-sizing: border-box; } ::-webkit-scrollbar { display: none; } body { width:
+100vw; height: 100vh; overflow: hidden; } nav { background-color: #ffffff;
+height: 74px; width: 100%; position: fixed; } .text { color: rgb(0, 0, 0);
+font-size: 30px; line-height: 74px; padding-top: 5px; } nav ul { float: right;
+margin-right: 20px; } nav ul li { display: inline-block; line-height: 80px;
+margin: 0 5px; } nav ul li a { color: rgb(0, 0, 0); font-size: 17px; padding:
+7px 13px; border-radius: 3px; text-transform: uppercase; } a.active, a:hover {
+background: #1b9bff; transition: 0.5s; } .checkbtn { font-size: 30px; color:
+rgb(0, 0, 0); float: right; line-height: 80px; margin-right: 40px; cursor:
+pointer; display: none; } #check { display: none; } @media (max-width: 952px) {
+.text { font-size: 10px; } nav ul li a { font-size: 16px; } } @media (max-width:
+858px) { .checkbtn { display: block; } ul { position: fixed; width: 100%;
+height: 100vh; background: #2c3e50; top: 80px; left: -100%; text-align: center;
+transition: all 0.5s; } nav ul li { display: block; margin: 50px 0; line-height:
+30px; } nav ul li a { font-size: 20px; color: white; } a:hover, a.active {
+background: none; color: #0082e6; } #check:checked ~ ul { left: 0; } } .profile
+{ display: inline; height: 60px; border-radius: 100%; margin-left: 15px;
+margin-right: 20px; } .profile1 { display: inline; padding-top: 25px; } .text {
+width: fit-content; font-size: 30px; } .text { display: inline-block; width:
+fit-content; vertical-align: super; background-image: linear-gradient( to
+bottom, transparent 0%, transparent 90%, orange 90%, orange 100% );
+background-repeat: no-repeat; background-size: 0% 100%; background-position-x:
+right; transition: background-size 300ms; } .text:hover { background-size: 100%
+100%; background-position-x: left; } .container { scroll-snap-type: y mandatory;
+overflow-y: scroll; height: 100vh; } section { display: flex; justify-content:
+center; align-items: center; height: 100vh; scroll-snap-align: start; } .one {
+background-color: aquamarine; } .two { background-color: yellow; } .three {
+background-color: pink; }
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A and M Frozen Meat Trading</title>
+    <link rel="Shortcut Icon" type="image/png" href="photos/profile.jpg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="left">
+        <img class="prof" src="./photos/profile.jpg" />
+        <div class="name">A and M Frozen Meat Trading</div>
+      </div>
+      <div class="mid">
+<a href="https://web.facebook.com/by.alexramos/?_rdc=1&_rdr"><img class="link" src="./photos/Facebook_Logo_(2019).jpg"></a>
+      </div>
+      <div class="right">
+        <ul>
+            <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#product">Products</a>
+        </li>
+        </li>
+        <li>
+          <a href="#contact">Contact here</a>
+        </li>
+        </li></ul>
+      </div>
+    </div>
+    <div class="grid">
+      <div id="home" class="first-page">PARALLAX EFFECT HERE</div>
+
+      <div id="product" class="second-page">
+        <div class="left-part">
+          <img class="prod1" src="photos/prod1.jpg" />
+        </div>
+        <div  class="right-part">
+          <img class="prod2" src="photos/prod2.jpg" />
+        </div>
+      </div>
+
+      <div id="contact" class="third-page">
+        <img class="contact" src="photos/coverphoto.jpg" />
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  padding-top: 50px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: brown;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.prof {
+  height: 30px;
+  width: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-shrink: 0;
+}
+.name {
+  cursor: pointer;
+}
+.mid {
+}
+.link {
+  width: 40px;
+  cursor: pointer;
+}
+
+.right {
+  display: flex;
+  flex-shrink: 0;
+}
+div ul li {
+  display: inline-block;
+  margin-right: 8px;
+  color: white;
+}
+div ul li a {
+  color: white;
+}
+
+.first-page {
+  width: 100vw;
+  height: 100vh;
+}
+.second-page {
+  width: 100vw;
+  height: 100vh;
+}
+.left-part {
+  width: 49%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.right-part {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+}
+
+.prod1 {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-top: 30px;
+}
+.prod2 {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-top: 10px;
+}
+
+.third-page {
+  width: 100vw;
+  height: 100vh;
+}
+.contact {
+  width: 80%;
+  object-fit: contain;
+  margin-top: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  padding: 0;
+  margin: 0;
+  padding-top: 60px;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: rgb(5, 31, 53);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.profile {
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.name {
+  font-size: 8px;
+  display: inline-block; /*inline-block-*/
+  color: aliceblue;
+}
+.bright-idea {
+  display: none;
+}
+
+.right {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.menu {
+  height: 20px;
+  color: aliceblue;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+}
+li a {
+  color: aliceblue;
+  font-size: 8px;
+}
